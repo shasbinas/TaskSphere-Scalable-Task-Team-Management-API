@@ -15,7 +15,7 @@
     "mongodb",
     "task-management"
   ],
-  "author": "Antigravity",
+  "author": "Shasbin AS",
   "license": "ISC",
   "dependencies": {
     "apollo-server-express": "^3.12.0",
