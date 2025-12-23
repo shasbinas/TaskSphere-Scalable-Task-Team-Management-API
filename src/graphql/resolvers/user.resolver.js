@@ -19,8 +19,8 @@ const userResolvers = {
     },
   },
   Mutation: {
-    register: async (_, { name, email, password }) => {
-      const result = await userController.register(name, email, password);
+    register: async (_, { name, email, password, role }) => {
+      const result = await userController.register(name, email, password, role);
         return {
             token: result.token,
             user: result

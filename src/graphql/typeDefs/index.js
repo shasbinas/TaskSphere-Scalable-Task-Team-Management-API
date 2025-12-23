@@ -1,6 +1,7 @@
 import { gql } from 'apollo-server-express';
 import userTypeDefs from './user.typeDef.js';
 import projectTypeDefs from './project.typeDef.js';
+import taskTypeDefs from './task.typeDef.js';
 
 const baseTypeDefs = gql`
   type Query {
@@ -11,4 +12,4 @@ const baseTypeDefs = gql`
   }
 `;
 
-export default [baseTypeDefs, userTypeDefs, projectTypeDefs];
+export default [baseTypeDefs, userTypeDefs, projectTypeDefs, taskTypeDefs];
